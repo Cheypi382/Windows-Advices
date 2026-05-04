@@ -1,0 +1,33 @@
+Deactivate Metered connection:
+1.	Open Settings
+2.	Open Network & internet
+3.	Select the connected internet
+4.	Deactivate Metered connection
+
+Change DNS:
+1. Run on https://dnsspeedtest.online/ multiple times per day, and note down the most dominant servers
+2. Open Settings
+3. Open Network & internet
+4. Select the connected internet
+5. Under IP settings, press edit
+6. Add the given IP of the provider in the Preferred DNS tab and save
+
+Remove restrictions:
+1.	Open View network connections
+2.	Right click your connection & select Properties
+3.	Select Configure & go on Advanced
+4.	Disable Energy-Efficient Ethernet, Green Ethernet, Power Saving Mode
+5.	On Speed & Duplex pick the highest
+6.	Restart device
+
+Speed up internet:
+1.	Press win + R
+2.	Type gpedit.msc
+3.	Double click on Computer Configuration
+4.	Open Administrative Templates
+5.	Open Network
+6.	Select QOS Packet Scheduler
+7.	Double click Limit reservable bandwidth
+8.	Select Not Configured
+9.	Click apply
+10.	Restart PC
