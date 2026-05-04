@@ -65,3 +65,33 @@ Deactivate background services
 3. Click services
 4. Press "Hide all Microsoft Services"
 5. Disable what not needed
+
+W.I.P
+speedup windows
+https://www.makeuseof.com/fix-slow-windows-pc-disable-indexing-update-medic/
+fix slower SSD
+https://www.makeuseof.com/ssd-getting-slower-and-how-to-fix-it/
+remove win11 bloat
+https://www.youtube.com/watch?v=-q4Sc43HAwY
+boost fps
+https://www.youtube.com/watch?v=aRbZyzUagF0
+lower ram&cpu
+https://www.youtube.com/watch?v=0GB-ZaXyS6I
+Programme
+•	Viele, wie möglich löschen
+•	Apps ersetzen, die viel Kraft verbrauchen
+Einstellungen
+•	Deaktivieren
+◦	Viele Einstellungen, wie möglich
+◦	Adjust the appearance and performance of Windows
+◦	Hintergrund Programme
+•	Windows aktualisieren
+•	Game Mode
+•	Apps einstellen für niedrige Verbrauch
+•	BIOS Einstellungen
+•	Services und dort deactivieren
+bloat kills PC
+https://www.youtube.com/watch?v=yVNkMNVv4Y4
+Free performance through BIOS
+https://www.youtube.com/watch?v=BwBFjjp5lmc
+https://www.makeuseof.com/tweaked-these-windows-settings-gaming-lag-disappeared/
