@@ -43,3 +43,7 @@ There are two ways to use VirusTotal.
    - Malwarebytes
    - Microsoft
    - Sophos
+
+w.i.p
+https://learn.microsoft.com/de-de/defender-endpoint/safety-scanner-download
+https://www.microsoft.com/de-de/download/details.aspx?id=9905
