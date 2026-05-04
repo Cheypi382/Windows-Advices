@@ -1,0 +1,67 @@
+Fully turn off PC:
+1.	Open Choose a power plan
+2.	Open Choose what the power buttons do
+3.	Click Change settings that are currently unavailable
+4.	Deactivate Turn on fast startup & press save
+
+Power plan to Ultimate Performance:
+1. Open Choose a power plan
+2. Select Ultimate Performance
+
+Boost FPS in a game/app:
+1.	Launch the application
+2.	Open Task Manager
+3.	Right click on the application
+4.	Select Go to details
+5.	Right click again on the preferred application
+6.	Select Set priority and then high (NOT Realtime)
+
+Boost FPS:
+1.	Press win + R
+2.	Type SystemPropertiesPerformance
+3.	Select Adjust for best performance
+4.	Click apply
+5.	Restart PC
+
+Fix memory issues:
+1.	Press win + R
+2.	Type MDSCHED.exe
+3.	Select Restart now and check for problems
+
+Disable startup apps:
+1.	Open Task Manager
+2.	Select Startup apps
+3.	Deactivate the non important ones
+
+Issues, but not sure:
+1.	Open Event Viewer
+2.	Select what needed and look through
+1.	Red symbols: bad
+2.	Yellow symbols: if repetitive, bad
+
+Fix system errors:
+1.	Enter CMD on Administrator
+2.	Type Get-MMAgent
+If “MemoryCompression: True” & system more than 7gb
+-	Type Disable-MMAgent -mc
+If “MemoryCompression: False” & system less than 8gb
+-	Type Enable-MMAgent -mc
+3.	Restart device
+
+Fix processors
+1. Search "msconfig"
+2. Go to "Boot"
+3. At Advanced Options, click on Number of processors and choose the highest amount
+4. Restart device
+
+Make Windows faster (no animations)
+1. Search "Advanced System Settings"
+2. Press "Settings" at "Performance"
+3. Choose "Adjust for best performance
+
+Deactivate background services
+1. Windows key + R
+2. Type msconfig
+3. Click services
+4. Press "Hide all Microsoft Services"
+5. Disable what not needed
