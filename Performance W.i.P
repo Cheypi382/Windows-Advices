@@ -5,8 +5,11 @@ Fully turn off PC:
 4.	Deactivate Turn on fast startup & press save
 
 Power plan to Ultimate Performance:
-1. Open Choose a power plan
-2. Select Ultimate Performance
+1. Open Command Prompt on Administrator
+2. Paste powercfg -duplicatescheme e9a42b02-d5df-448d-aa00-03f14749eb61
+3. Run that command
+4. Open Choose a power plan
+5. Select Ultimate Performance
 
 Boost FPS in a game/app:
 1.	Launch the application
@@ -48,50 +51,82 @@ If “MemoryCompression: False” & system less than 8gb
 -	Type Enable-MMAgent -mc
 3.	Restart device
 
-Fix processors
+Fix processors:
 1. Search "msconfig"
 2. Go to "Boot"
 3. At Advanced Options, click on Number of processors and choose the highest amount
 4. Restart device
 
-Make Windows faster (no animations)
+Make Windows faster (no animations):
 1. Search "Advanced System Settings"
 2. Press "Settings" at "Performance"
 3. Choose "Adjust for best performance
 
-Deactivate background services
+Deactivate background services:
 1. Windows key + R
 2. Type msconfig
 3. Click services
 4. Press "Hide all Microsoft Services"
 5. Disable what not needed
 
+Deactivating useless services:
+1. Open Services
+2. Right click on the process, you don't need
+3. Select Properties and and choose for startup Manual
+4. Click apply
+
+In generall some advices:
+1. deactivate as many useless settings as possible
+2. Deactivate background apps
+3. Update Windows
+4. Activate Game Mode
+5. Activate Storage Sense
+
+Fix hardware issues:
+1. Windows key + R
+2. Type MSDT.exe -ID DEVICEDIAGNOSTIC
+3. Click enter
+4. Click on advanced and select Apply repairs automatically
+5. Click next
+6. After it scanned, press apply fix
+7. Restart PC
+
 W.I.P
-speedup windows
-https://www.makeuseof.com/fix-slow-windows-pc-disable-indexing-update-medic/
-fix slower SSD
-https://www.makeuseof.com/ssd-getting-slower-and-how-to-fix-it/
-remove win11 bloat
-https://www.youtube.com/watch?v=-q4Sc43HAwY
-boost fps
-https://www.youtube.com/watch?v=aRbZyzUagF0
 lower ram&cpu
 https://www.youtube.com/watch?v=0GB-ZaXyS6I
-Programme
-•	Viele, wie möglich löschen
-•	Apps ersetzen, die viel Kraft verbrauchen
-Einstellungen
-•	Deaktivieren
-◦	Viele Einstellungen, wie möglich
-◦	Adjust the appearance and performance of Windows
-◦	Hintergrund Programme
-•	Windows aktualisieren
-•	Game Mode
-•	Apps einstellen für niedrige Verbrauch
-•	BIOS Einstellungen
-•	Services und dort deactivieren
-bloat kills PC
-https://www.youtube.com/watch?v=yVNkMNVv4Y4
-Free performance through BIOS
-https://www.youtube.com/watch?v=BwBFjjp5lmc
 https://www.makeuseof.com/tweaked-these-windows-settings-gaming-lag-disappeared/
+echo Deleting temporary files
+del /q /f /s "%temp%\*" && del /s /q "C:\Windows\temp\*"
+
+echo Deleting temporary files
+del /q/f/s %TEMP%\* & for /d %x in (%TEMP%\*) do @rd /s /q "%x"
+
+echo opening Cleanmgr
+cleanmgr
+
+echo Defraging HDD
+defrag c:
+
+echo Clearing prefetch files
+del C:\Windows\prefetch\*.*/s/q
+
+echo Running DISM check health
+dism /online /cleanup-image /checkhealth
+
+echo Running DISM scan health
+dism /online /cleanup-image /scanhealth
+
+echo Running DISM restore health
+dism /online /cleanup-image /restorehealth
+
+echo Running DISM restore health
+dism /online /cleanup-image /restorehealth /source:c:\sources\install.wim /limitaccess
+
+echo Running DISM start componentcleanup
+dism /online /cleanup-image /startcomponentcleanup
+
+echo Running System File Checker
+sfc /scannow
+
+echo Checking disk for errors
+chkdsk /r
