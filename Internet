@@ -35,6 +35,13 @@ Speed up internet:
 Clearing internet cache & resetting errors:
 1. Open Command Prompt with Administrator permissions
 2. run ipconfig /flushdns
+
+Block downloads from other devices
+1. Open Settings
+2. Open Windows Update
+3. Click on Advanced Options
+4. Click Delivery Optimization
+5. Deactivate Allow Downloads from other devices
 3. run wsreset.exe
 4. run netsh winsock reset
 5. run netsh int ip reset
