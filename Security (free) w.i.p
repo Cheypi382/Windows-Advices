@@ -47,3 +47,49 @@ There are two ways to use VirusTotal.
 w.i.p
 https://learn.microsoft.com/de-de/defender-endpoint/safety-scanner-download
 https://www.microsoft.com/de-de/download/details.aspx?id=9905
+if hack:
+search net user on cmd (hint: two users should be ok)
+https://www.youtube.com/watch?v=aJ37b2-OhH8
+If hacked
+Disconnect your PC from the internet. Turn off WiFi or unplug the LAN cable.
+1.	Do NOT reset or format the system. Do NOT delete files. Preserve evidence.
+2.	From a different clean device:
+•	Change your email password first.
+•	Then change banking, cloud, and social media passwords.
+•	Enable two factor authentication using Microsoft Authenticator or Google Authenticator.
+3.	Check if your email was exposed in a data breach:
+•	Visit Have I Been Pwned
+•	Enter your email and review results.
+4.	Open Task Manager:
+•	Press Ctrl + Shift + Esc
+•	Look for unknown or suspicious processes
+•	Check high CPU, Memory, or Network usage
+5.	Open Command Prompt and run: netstat -ano
+•	Review active connections
+•	Look for unknown IP addresses
+•	Match PID with Task Manager
+6.	Open Event Viewer:
+•	Go to Windows Logs > Security
+•	Check for failed or unusual login attempts
+7.	Run Windows Security:
+•	Perform a Full Scan
+•	Then run Microsoft Defender Offline Scan
+8.	Run a second opinion scanner:
+•	Install and scan with Malwarebytes
+9.	Check installed programs:
+•	Control Panel > Programs and Features
+•	Remove software you did not install
+10.	Check Remote Desktop:
+•	Settings > System > Remote Desktop
+•	Disable if not required
+11.	Review Startup programs:
+•	Task Manager > Startup tab
+•	Disable unknown entries
+12.	Secure your router:
+•	Change router admin password
+•	Check connected devices
+•	Remove unknown devices
+13.	If financial fraud, blackmail, or business data theft is involved:
+•	Inform your bank immediately
+•	Report to your local cyber crime cell
+Secure accounts first. Preserve evidence. Scan properly. Act only on verified findings
