@@ -31,3 +31,11 @@ Speed up internet:
 8.	Select Not Configured
 9.	Click apply
 10.	Restart PC
+
+Clearing internet cache & resetting errors:
+1. Open Command Prompt with Administrator permissions
+2. run ipconfig /flushdns
+3. run wsreset.exe
+4. run netsh winsock reset
+5. run netsh int ip reset
+6. netsh interface tcp set global autotuninglevel=normal
