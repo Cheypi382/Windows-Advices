@@ -47,6 +47,7 @@ There are two ways to use VirusTotal.
 w.i.p
 https://learn.microsoft.com/de-de/defender-endpoint/safety-scanner-download
 https://www.microsoft.com/de-de/download/details.aspx?id=9905
+https://github.com/bmrf/tron
 if hack:
 search net user on cmd (hint: two users should be ok)
 https://www.youtube.com/watch?v=aJ37b2-OhH8
