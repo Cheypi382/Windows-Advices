@@ -1,5 +1,5 @@
 Anti-Virus:
-Use Windows Defender on its highest settings. Nowadays, Windows Defender is for private usage enough
+Use Windows Defender on its highest settings. Nowadays, Windows Defender is for private usage enough. If you suspect a virus, press Win+R and type sigverif
 
 VPN:
 Use ProtonVPN, with kill switch, if you want to be extra sure. Free VPNs are a bit privacy risk because the providers sell your data for profit. Proton on the otherhand, subsidize their free tier with their paid tier. That's why ProtonVPN on free tier is the only safe free vpn.
